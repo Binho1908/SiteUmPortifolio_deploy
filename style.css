@@ -1,0 +1,580 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Raleway', 'sans-serif';
+    color: var(--White);
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--DarkBlue);
+  }
+    :root {
+--DarkBlueEmailSign: hsl(217, 28%, 15%);
+--DarkBlueMain: hsl(218, 28%, 13%);
+--DarkBluefooter: hsl(216, 53%, 9%);
+--DarkBlue: hsl(219, 30%, 18%);
+--Cyan: hsl(176, 68%, 64%);
+--Blue: hsl(198, 60%, 50%);
+--LightRed: hsl(0, 100%, 63%);
+--White: hsl(0, 0%, 100%);
+    }
+    .nav {
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Navul ul{
+        display: flex;
+        padding: 5px;
+        list-style: none;
+    }
+    .navImage img {
+     width: 60%;   
+    }
+    .Navul ul li  {
+        margin-right: 10px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 40px;
+    }
+    .headerImage img{
+        width: 100%;
+        
+    }
+    .header .headerText h1{
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    .headerBottom button{
+        margin: 20px;
+        border: none;
+        background-image: linear-gradient(to right, var(--Cyan), var(--Blue));
+        padding: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-weight: 700;
+    }
+    .icons{
+        margin-top: 100px;
+    }
+    .iconsOne, .iconsTwo, .iconsThree, .iconsFour {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .iconText {
+        margin: 10px 30px 50px 30px;
+    }
+    .iconText p {
+        margin-top: 10px;
+    }
+    .sectionImagem img {
+        width: 100%;
+    }
+    .sectionText {
+        margin: 15px 30px 0px 30px;
+        
+    }
+    .sectionText h1 {
+        font-weight: 700;
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .sectionText p {
+        padding-bottom: 15px;
+    }
+    .sectionButton{
+        display: flex;
+        align-items: flex-end;
+    }
+    .sectionButton button{
+        padding: 5px;
+        font-size: 14px;
+        margin-left: 0px;
+        margin-bottom: 150px;
+        color: var(--Cyan);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom-color: var(--Cyan);
+    }
+    .relative {
+        background-image: url(./images/bg-quotes.png);
+        width: 10px;
+    }
+    .card {
+        position: relative;
+    }
+    #card {
+        margin: 15px 30px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+
+    }
+    .relative {
+        position: absolute;
+        top: -20px;
+        left: 40px;
+    }
+    .relative img {
+        width: 30px;
+    }
+    .CardText p{
+        margin-bottom: 15px;
+        line-height: 23px;
+    }
+    .cardPerson {
+        display: flex;
+    }
+    .cardPersonImagem img{
+        width: 35px;
+        border-radius: 50%;
+    }
+    .cardPersonText {
+        margin-left: 10px;
+    }
+    .cardPersonText p:nth-child(1) {
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .cardPersonText p:nth-child(2) {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .form {
+        margin: 150px 30px 80px 30px;
+        background-color: rgba(255, 255, 255, 0.05);        
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .formText {
+        margin: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .formText h1{
+        font-size: 16px;
+    }
+    .formText p {
+        padding: 20px 20px 0px 20px;
+        font-size: 12px;
+    }
+    .formInput {
+        display: flex;
+        justify-content: center;
+    }
+    .form input {
+        border:none;
+        margin-bottom: 20px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        width: 80%;
+        height: 40px;
+        font-weight: 700;
+        color: black;
+        font-size: 12px;
+        text-align: center;
+    }
+    .formBotton{
+        display: flex;
+        justify-content: center;
+    }
+    .form button{
+        border: none;
+        height: 40px;
+        background-image: linear-gradient(to right, var(--Cyan), var(--Blue));
+        width: 80%;
+        font-weight: 700;
+        margin-bottom: 30px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-size: 12px;
+    }
+    .footer {
+        margin: 30px;
+    }
+    .footerImagem img{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    .footerLocal p,.footerContatosOne p,.footerContatosTwo p{
+        font-size: 16px;
+    }
+    .footerLocal img, .footerContatosOne img,.footerContatosTwo img{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    .footerLocal, .footerContatosOne,.footerContatosTwo {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    .footerContatosTwo {
+        margin-bottom: 50px;
+    }
+    .footerAbout li, .footerContact li{
+        list-style: none;
+    }
+    .footerAbout li a, .footerContact li a {
+        text-decoration: none;
+    }
+    .footerAbout {
+        margin-bottom: 30px;
+    }
+    .footerAbout li {
+        margin-bottom: 12px;
+    }
+    .footerContact {
+        margin-bottom: 20px;
+    }
+    .footerContact li {
+        margin-bottom: 12px;
+    }
+    li a:hover {
+        font-weight: bold;
+    }
+    .footerThree {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    .footerThree img {
+        width: 20px;
+        border-radius: 50%;
+        padding: 15px;
+        cursor: pointer;
+        background-color: white;
+    }  
+    .footerThree img:nth-child(1) {
+        width: 15px;
+
+    }
+
+
+    @media(min-width:800px){
+        .header {
+            margin: 200px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .headerImage img{
+            width: 100%;
+            
+        }
+        .header .headerText h1{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .header .headerText p {
+            font-size: 13px;
+        }
+        .headerBottom button{
+            padding: 12px;
+            padding-left: 70px;
+            padding-right: 50px;
+            cursor: pointer;
+        }
+        .icons{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .iconsOne, .iconsTwo, .iconsThree, .iconsFour {
+            width: 50%;
+            padding: 50px;
+        }
+        .iconText {
+            margin: 10px;
+        }
+        .iconText p {
+            margin-top: 10px;
+        }
+        .section {
+            width: 100%;
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .sectionImagem {
+            margin-left: 40px;
+        }
+        .sectionText {
+            margin-top: 40px;
+            margin-right: 60px;
+        }
+        .sectionImagem, .sectionText {
+            width: 50%;
+        }
+        .sectionText h1 {
+            font-size: 28px;
+        }
+        .sectionText p {
+            font-size: 10px;
+        }
+        .sectionButton button{
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+        .relative {
+            background-image: url(./images/bg-quotes.png);
+            width: 10px;
+        }
+        .card {
+            width: 100%;
+            display: flex;
+            margin: 0px;
+        }
+        #card {
+            width: 33%;
+            margin: 15px 20px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+        .relative {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+        .formao {
+            display: flex;
+            justify-content: center;
+        }
+        .form {
+            width: 60%;
+            margin: 100px 30px 80px 30px;     
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .formText {
+            margin: 20px;
+            padding-top: 20px;
+            text-align: center;
+        }
+        .formText h1{
+            font-size: 16px;
+        }
+        .formText p {
+            padding: 20px 20px 0px 20px;
+            font-size: 12px;
+        }
+        .formTudo {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        .formInput {
+            display: flex;
+            justify-content: center;
+            margin-left: -30px;
+            padding: 0;
+            margin-right: 10px;
+            width: 70%;
+            
+        }
+        
+        .formBotton{
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            margin-left: -30px;
+            cursor: pointer;
+        }
+        .form button{
+            height: 40px;
+            width: 100%;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-size: 12px;
+        }
+        .footer {
+            position: relative;
+            margin: 30px;
+            width: 100%;
+            display: flex;
+        }
+        .footerOne {
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .footerLocal,.footerMainContatos {
+            width: 40%;
+        }
+
+        .footerTwo {
+            display: flex;
+            width: 25%;
+            flex-wrap: wrap;
+        }
+        .footerAbout, .footerContact {
+            width: 50%;
+        }
+        .footerThree {
+            width: 20%;
+            flex-wrap: wrap;
+            display: flex;
+        
+        }
+        .footerImagem {
+            position: absolute;
+            top: -60px;
+            left: 20px;
+        }
+    }
+    @media(min-width:1000px){
+        .nav {
+            margin: 20px 40px;
+        }
+        .navImage img {
+            margin: 20px;
+            width: 100%;   
+        }
+        .Navul ul li  {
+            margin-top: 30px;
+            margin-right: 50px;
+            font-size: 24px;
+        }
+        .Navul li:hover  {
+            cursor: pointer;
+            border-bottom: 1px solid white;
+        }
+        .header{
+            margin: 100px 400px 0px 400px;
+        }
+        .header .headerText h1{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .header .headerText p {
+            font-size: 16px;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .headerBottom button{
+            padding: 15px;
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-top: 20px;
+        }
+        .icons{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 100px 300px;
+        }
+        .iconsOne, .iconsTwo, .iconsThree, .iconsFour {
+            padding: 20px;
+            width: 50%;        
+        }
+        .iconText {
+            max-width: 300px;
+        }
+        .iconText p {
+            margin-top: 10px;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .sectionText {
+            margin-top: 80px;
+            margin-right: 60px;
+        }
+        .sectionImagem, .sectionText {
+            width: 50%;
+        }
+        .sectionText h1 {
+            font-size: 46px;
+            margin-right: 100px;
+        }
+        .sectionText p {
+            font-size: 20px;
+        }
+        .sectionButton button{
+            margin-top: 20px;
+            margin-left: 0px;
+            margin-bottom: 0px;
+        }
+        .sectionButton button:hover{
+            background-color: var(--DarkBlue);
+            border-color: white;
+            color: white;
+        }
+        .card {
+            padding: 0 150px ;
+        }
+        .relative {
+            position: absolute;
+            top: -10px;
+            left: 170px;
+        }
+        .formao {
+            display: flex;
+            justify-content: center;
+        }
+        .form {
+            width: 55%;
+        }
+        .formText h1{
+            font-size: 29px;
+        }
+        .formText p {
+            padding: 20px 20px 0px 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+            margin: 0px 40px;
+        }
+        .formInput {
+            display: flex;
+            justify-content: center;
+            margin-left: -50px;
+            padding: 0;
+            margin-right: 0px;
+            width: 70%;
+        }
+        
+        .formBotton{
+            display: flex;
+            justify-content: center;
+            width: 20%;
+            margin-left: -40px;
+        }
+        .form button{
+            height: 40px;
+            width: 100%;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        .form button:hover {
+            filter: brightness(1.2);
+        }
+        .footerThree{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    
